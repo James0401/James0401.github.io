@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS specificity</title>
+    <style>
+        /* tag selector */
+        li {
+            font-size: 3rem;
+            color: blue;
+        }
+
+        .firstli {
+            color: orangered;
+        }
+
+        /* id selector */
+        #firstli {
+            color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--  tag<class<id<inline style -->
+    <ul>
+        <li style-'color: fuchsia' id-'firstli' class=firstli></li>
+        <li class='Play with friends'>Play with friends</li>
+        <li class='Play tennis'>Play tennis</li>
+        <li class='Play with dog'>Play with dog</li>
+    </ul>
+
+
+</body>
+
+</html>
